@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .body {
+    margin: 1rem 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: #14213d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #4539e6;
+  }
+  .Image-Profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #14213d;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+  }
+  .Image-Profile img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
