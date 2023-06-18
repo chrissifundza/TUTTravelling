@@ -132,8 +132,8 @@ const readCodes =()=>{
 	  function geocodeLatLng(geocoder) {
 		
 		const latlng = {
-		  lat: parseFloat(coords.lat),
-		  lng: parseFloat(coords.lng),
+		  lat: parseFloat(coords?.lat),
+		  lng: parseFloat(coords?.lng),
 		};
 	  
 		geocoder

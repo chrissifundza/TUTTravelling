@@ -9,7 +9,7 @@ import Map from "./Map/Map";
 const Dashboard = () => {
 	const [type, setType] = useState("restaurants");
 	const [rating, setRating] = useState("");
-	const [coords, setCoords] = useState({});
+	const [coords, setCoords] = useState({lat: -25.551780, lng: 28.095380});
 	const [bounds, setBounds] = useState(null);
 
 	const [weatherData, setWeatherData] = useState([]);
@@ -19,14 +19,14 @@ const Dashboard = () => {
 	const [childClicked, setChildClicked] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 
-	useEffect(() => {
-		navigator.geolocation.getCurrentPosition(
-			({ coords: { latitude, longitude } }) => {
-				setCoords({ lat: -25.551780, lng: 28.095380});
+	// useEffect(() => {
+	// 	navigator.geolocation.getCurrentPosition(
+	// 		({ coords: { latitude, longitude } }) => {
+	// 			setCoords({ lat: -25.551780, lng: 28.095380});
 				
-			}
-		);
-	}, []);
+	// 		}
+	// 	);
+	// }, []);
 
 	useEffect(() => {
 		const filtered = places.filter(
